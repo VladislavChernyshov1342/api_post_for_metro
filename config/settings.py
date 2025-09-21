@@ -14,11 +14,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    # Third-party
     "rest_framework",
     "django_filters",
     "corsheaders",
-    # Local
     "users",
     "posts",
 ]
@@ -89,7 +87,6 @@ REST_FRAMEWORK = {
     "PAGE_SIZE": 20,
 }
 
-# Media (user uploaded files)
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
 

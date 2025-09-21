@@ -6,3 +6,5 @@ class PostsConfig(AppConfig):
     name = "posts"
 
 
+
+
