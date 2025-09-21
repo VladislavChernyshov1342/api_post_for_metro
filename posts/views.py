@@ -6,7 +6,6 @@ from .serializers import PostListSerializer, PostDetailSerializer
 class PostViewSet(viewsets.ModelViewSet):
     """
     ViewSet для работы с постами.
-    
     Поддерживает все CRUD операции:
     - GET /api/posts/ - список постов
     - POST /api/posts/ - создание поста
@@ -19,14 +18,9 @@ class PostViewSet(viewsets.ModelViewSet):
     def get_serializer_class(self):
         """
         Выбирает сериализатор в зависимости от действия.
-        
         Для списка используется PostListSerializer,
         для остальных операций - PostDetailSerializer.
         """
         if self.action == "list":
             return PostListSerializer
         return PostDetailSerializer
-
-
-
-
